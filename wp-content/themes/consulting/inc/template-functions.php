@@ -35,3 +35,9 @@ function consulting_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'consulting_pingback_header' );
+
+/**
+ * Required styles end scripts
+ */
+if (is_file( get_template_directory() . '/inc/consulting-styles-end-scripts.php') )
+    require get_template_directory() . '/inc/consulting-styles-end-scripts.php';

@@ -1,10 +1,9 @@
 .header_menu {
-  float: left;
   display: flex;
   align-items: center;
-  margin-top: 30px;
-  @media(max-width: 991px) {
-    margin-top: 0;
+  justify-content: center;
+  color:#fff;
+  @media(max-width: 767px) {
     height: 100%;
   }
   &-outer {
@@ -24,14 +23,13 @@
   .menu {
     display: flex;
     align-items: center;
-    margin-left: 105px;
     list-style: none;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     transition: left .3s;
-    @media(max-width: 991px) {
+    @media(max-width: 767px) {
       position: fixed;
-      left: -260px;
+      left: -295px;
       flex-direction: column;
       align-items: flex-start;
       margin-left: 0;
@@ -39,12 +37,11 @@
       padding-left: 35px;
       height: 100%;
       width: 260px;
-      overflow: scroll;
       background: #000000;
     }
     .menu-item {
-      margin-right: 30px;
-      padding-bottom: 10px;
+      margin-right: 35px;
+      padding: 12px 0;
       letter-spacing: 0.4px;
       &:last-child {
         margin-right: 0;
@@ -58,7 +55,7 @@
         list-style: none;
         transition: all .3s;
         background: #000000;
-        @media(max-width: 991px) {
+        @media(max-width: 767px) {
           visibility: visible;
           opacity: 1;
           position: relative;
@@ -73,28 +70,28 @@
         }
       }
     }
-    .menu-item-has-children {
-      position: relative;
-      margin-right: 50px;
-      &:before {
-        content: '\f123';
-        font-family: "Ionicons";
-        display: block;
-        position: absolute;
-        top: 0;
-        right: -20px;
-      }
-      &:hover {
-        .sub-menu {
-          visibility: visible;
-          opacity: 1;
-          background: #000000;
-          @media(max-width: 991px) {
-            height: auto;
-          }
-        }
-      }
-    }
+    //.menu-item-has-children {
+    //  position: relative;
+    //  margin-right: 50px;
+    //  &:before {
+    //    content: '\f123';
+    //    font-family: "Ionicons";
+    //    display: block;
+    //    position: absolute;
+    //    top: 0;
+    //    right: -20px;
+    //  }
+    //  &:hover {
+    //    .sub-menu {
+    //      visibility: visible;
+    //      opacity: 1;
+    //      background: #000000;
+    //      @media(max-width: 767px) {
+    //        height: auto;
+    //      }
+    //    }
+    //  }
+    //}
   }
 
   &__open {
@@ -104,9 +101,4 @@
       z-index: 2;
     }
   }
-/*  &__close {
-    .menu {
-      left: -260px;
-    }
-  }*/
 }
