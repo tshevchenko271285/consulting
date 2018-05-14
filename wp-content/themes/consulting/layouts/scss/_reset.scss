@@ -1,0 +1,17 @@
+div, ul, li, p,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+a:active, a:hover, a:visited, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+input, textarea, button {
+  border: 0;
+  -webkit-appearance: none;
+  &:active, &:hover, &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}

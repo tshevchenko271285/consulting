@@ -7,9 +7,20 @@ wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
-wp-content/mu-plugins/
 wp-content/wp-cache-config.php
+
 wp-content/plugins/hello.php
+wp-content/plugins/akismet/
+
+wp-content/themes/twentyfifteen/
+wp-content/themes/twentyseventeen/
+wp-content/themes/twentysixteen/
+wp-content/themes/consulting/.sass-cache/
+
+_temp/
+.idea/
+wp-admin/
+wp-includes/
 
 /.htaccess
 /license.txt
