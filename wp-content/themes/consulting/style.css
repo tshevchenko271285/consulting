@@ -127,4 +127,37 @@ body {
       left: 0px;
       z-index: 2; }
 
+.footer {
+  padding-top: 35px;
+  padding-bottom: 32px;
+  background-color: #002948;
+  color: #fff; }
+  .footer_menu {
+    margin-bottom: 35px; }
+    @media (max-width: 767px) {
+      .footer_menu {
+        display: none; } }
+    .footer_menu .menu {
+      display: flex;
+      list-style: none;
+      justify-content: center; }
+      .footer_menu .menu-item {
+        margin-right: 30px;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: -0.32px; }
+        .footer_menu .menu-item:last-child {
+          margin-right: 0; }
+  .footer_contact {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.28px; }
+    .footer_contact:last-child {
+      margin-bottom: 0; }
+    .footer_contact i {
+      font-size: 16px;
+      margin-right: 5px; }
+
 /*# sourceMappingURL=style.css.map */

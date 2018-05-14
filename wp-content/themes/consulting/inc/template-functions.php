@@ -41,3 +41,9 @@ add_action( 'wp_head', 'consulting_pingback_header' );
  */
 if (is_file( get_template_directory() . '/inc/consulting-styles-end-scripts.php') )
     require get_template_directory() . '/inc/consulting-styles-end-scripts.php';
+
+/**
+ * Menu Settings
+ */
+if (is_file( get_template_directory() . '/inc/consulting-menus.php') )
+    require get_template_directory() . '/inc/consulting-menus.php';

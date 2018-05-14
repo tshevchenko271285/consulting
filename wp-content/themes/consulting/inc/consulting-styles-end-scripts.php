@@ -5,6 +5,7 @@
  */
 function consulting_scripts() {
     // Styles
+    wp_enqueue_style( 'consulting-fontawesome-style', get_template_directory_uri() . '/layouts/fontawesome-all.min.css' );
     wp_enqueue_style( 'consulting-bootstrap-style', get_template_directory_uri() . '/layouts/bootstrap.min.css' );
     wp_enqueue_style( 'consulting-style', get_stylesheet_uri() );
 
