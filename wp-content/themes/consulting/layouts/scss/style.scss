@@ -6,14 +6,15 @@ Author URI: http://tshevchenko.tk
 Description: Test Task For Gladiolus
 Version: 1.0.0
 */
-@import "_variables.scss";
-@import "_reset.scss";
-@import "_main.scss";
-@import "_fonts.scss";
-@import "_typography.scss";
-@import "_buttons.scss";
+@import "variables";
+@import "reset";
+@import "main";
+@import "fonts";
+@import "typography";
+@import "buttons";
 
-@import "_header.scss";
-@import "_header-menu.scss";
+@import "header";
+@import "header-menu";
+@import "banner";
 
-@import "_footer.scss";
+@import "footer";

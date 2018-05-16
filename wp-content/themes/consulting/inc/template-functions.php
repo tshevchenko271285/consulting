@@ -47,3 +47,9 @@ if (is_file( get_template_directory() . '/inc/consulting-styles-end-scripts.php'
  */
 if (is_file( get_template_directory() . '/inc/consulting-menus.php') )
     require get_template_directory() . '/inc/consulting-menus.php';
+
+/**
+ * Required Route For ACF Flexible Fields
+ */
+if (is_file( get_template_directory() . '/inc/consulting-route.php') )
+    require get_template_directory() . '/inc/consulting-route.php';
