@@ -14,8 +14,20 @@
 
 get_header();
 ?>
-
-
+<!-- Start Content-->
 <?php
-//get_sidebar();
+    while ( have_posts() ) : the_post();
+        // check if the flexible content field has rows of data
+        if( have_rows('blocks') ):
+            // loop through the rows of data
+            while ( have_rows('blocks') ) : the_row();
+                consulting_route( get_row_layout() );
+            endwhile;
+        else :
+            // no layouts found
+        endif;
+    endwhile; // End of the loop.
+?>
+<!-- End Content-->
+<?php
 get_footer();
