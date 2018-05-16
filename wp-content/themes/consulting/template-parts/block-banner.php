@@ -20,7 +20,7 @@
                 <div class="banner_form">
                     <?php $title_form = get_sub_field('form_title') ? get_sub_field('form_title') : false; ?>
                     <?php if( $title_form ) : ?>
-                        <h3><?php echo $title_form; ?></h3>
+                        <h4><?php echo $title_form; ?></h4>
                     <? endif; ?>
                     <?php echo do_shortcode( '[contact-form-7 id="34" title="Contact form 1"]' )?>
                 </div>
