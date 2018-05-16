@@ -1,4 +1,6 @@
 .news {
+  padding-top: 35px;
+  @media(max-width: 767px) {padding-top: 45px;}
   h2 {
     margin-bottom: 40px;
   }

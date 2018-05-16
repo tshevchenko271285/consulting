@@ -1,0 +1,22 @@
+.video {
+  padding-top: 35px;
+  background-size: cover;
+  background-position: 50% 50%;
+  @media(max-width: 767px) {
+    padding-top: 45px;
+  }
+  h2 {
+    margin-bottom: 35px;
+    color: #fff;
+  }
+  &_item {
+    margin-bottom: 33px;
+    @media(max-width: 767px) {
+      margin-bottom: 25px;
+    }
+    iframe {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
