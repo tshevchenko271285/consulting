@@ -1,5 +1,5 @@
 .facts {
-  padding-top: 30px;
+  padding-top: 35px;
   @media(max-width:575px) {padding-top: 48px;}
   h2 {
     margin-bottom: 30px;
@@ -15,12 +15,12 @@
   }
   &_image {
     width: 40%;
-    max-width: 205px;
     padding-top: 5px;
     padding-right: 20px;
     @media(max-width: 991px){padding-right: 0;}
     @media(max-width: 575px) {
       width: 100%;
+      max-width: 205px;
       margin: 0 auto;
     }
     img {

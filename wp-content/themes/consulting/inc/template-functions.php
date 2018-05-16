@@ -53,3 +53,9 @@ if (is_file( get_template_directory() . '/inc/consulting-menus.php') )
  */
 if (is_file( get_template_directory() . '/inc/consulting-route.php') )
     require get_template_directory() . '/inc/consulting-route.php';
+
+/**
+ * Custom Post Types
+ */
+if (is_file( get_template_directory() . '/inc/consulting-post-types.php') )
+    require get_template_directory() . '/inc/consulting-post-types.php';
