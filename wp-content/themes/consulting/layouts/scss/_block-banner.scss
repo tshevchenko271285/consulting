@@ -41,6 +41,7 @@
     }
   }
   &_form {
+    position: relative;
     margin: 0 75px 0 85px;
     padding: 18px 20px;
     border-radius: 3px;
@@ -89,6 +90,20 @@
     }
     .ajax-loader {
       position: absolute;
+    }
+    .wpcf7-form-control-wrap {
+      position: relative;
+    }
+    .wpcf7-not-valid-tip {
+      position: absolute;
+      top: -55px;
+      left: 60px;
+      min-width: 170px;
+    }
+    .wpcf7-validation-errors {
+      position: absolute;
+      left: 0;
+      bottom: 75px;
     }
   }
 }

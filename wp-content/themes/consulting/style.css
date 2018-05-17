@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: consulting
 Theme URI: http://underscores.me/
@@ -189,6 +190,7 @@ p {
         left: -15px;
         top: 0; }
   .banner_form {
+    position: relative;
     margin: 0 75px 0 85px;
     padding: 18px 20px;
     border-radius: 3px;
@@ -233,6 +235,17 @@ p {
           padding: 14px; } }
     .banner_form .ajax-loader {
       position: absolute; }
+    .banner_form .wpcf7-form-control-wrap {
+      position: relative; }
+    .banner_form .wpcf7-not-valid-tip {
+      position: absolute;
+      top: -55px;
+      left: 60px;
+      min-width: 170px; }
+    .banner_form .wpcf7-validation-errors {
+      position: absolute;
+      left: 0;
+      bottom: 75px; }
 
 .facts {
   padding-top: 35px; }
@@ -356,6 +369,194 @@ p {
     .video_item iframe {
       max-width: 100%;
       width: 100%; }
+
+.sertificates {
+  padding: 15px 0; }
+  @media (max-width: 767px) {
+    .sertificates {
+      padding: 10px 0; } }
+  .sertificates h2 {
+    margin-bottom: 35px; }
+  .sertificates-slider {
+    position: relative; }
+    @media (max-width: 767px) {
+      .sertificates-slider {
+        max-width: 170px;
+        margin: 0 auto; } }
+    .sertificates-slider_item {
+      display: flex;
+      align-items: center;
+      min-height: 240px;
+      border: 1px solid #cccccc; }
+      .sertificates-slider_item:hover {
+        cursor: pointer; }
+      .sertificates-slider_item img {
+        width: 100%;
+        max-width: 100%;
+        height: auto; }
+    .sertificates-slider .owl-nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%; }
+      .sertificates-slider .owl-nav .owl-prev, .sertificates-slider .owl-nav .owl-next {
+        position: absolute;
+        top: 38%; }
+        .sertificates-slider .owl-nav .owl-prev i, .sertificates-slider .owl-nav .owl-next i {
+          font-size: 45px; }
+      .sertificates-slider .owl-nav .owl-prev {
+        left: -75px; }
+        @media (max-width: 767px) {
+          .sertificates-slider .owl-nav .owl-prev {
+            left: -60px; } }
+      .sertificates-slider .owl-nav .owl-next {
+        right: -75px; }
+        @media (max-width: 767px) {
+          .sertificates-slider .owl-nav .owl-next {
+            right: -60px; } }
+  .sertificates-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5); }
+    .sertificates-popup_windows {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 500px; }
+    .sertificates-popup_outer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .sertificates-popup_close {
+      position: absolute;
+      right: 40px;
+      top: -20px;
+      color: #fff; }
+      .sertificates-popup_close:hover {
+        cursor: pointer; }
+    .sertificates-popup_slider {
+      position: relative;
+      z-index: 11; }
+      .sertificates-popup_slider .owl-stage {
+        display: flex;
+        align-items: center; }
+      .sertificates-popup_slider .owl-stage-outer {
+        z-index: 11; }
+      .sertificates-popup_slider .owl-nav {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .sertificates-popup_slider .owl-nav .owl-prev, .sertificates-popup_slider .owl-nav .owl-next {
+          position: relative; }
+          .sertificates-popup_slider .owl-nav .owl-prev i, .sertificates-popup_slider .owl-nav .owl-next i {
+            font-size: 20px;
+            color: #fff; }
+        .sertificates-popup_slider .owl-nav .owl-prev {
+          left: -30px; }
+        .sertificates-popup_slider .owl-nav .owl-next {
+          right: -30px; }
+      .sertificates-popup_slider .owl-item img {
+        width: auto; }
+    .sertificates-popup_item {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.training {
+  padding-top: 25px; }
+  .training h2 {
+    margin-bottom: 15px; }
+  .training_outer {
+    background: #527188; }
+  .training_image {
+    padding-left: 20px;
+    position: relative;
+    top: -40px;
+    text-align: center; }
+    @media (max-width: 991px) {
+      .training_image {
+        top: 0;
+        padding-left: 0;
+        padding-top: 35px; } }
+    .training_image img {
+      max-width: 100%; }
+  .training_content {
+    color: #fff; }
+    .training_content h3 {
+      margin-top: 35px;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px; }
+      @media (max-width: 767px) {
+        .training_content h3 {
+          text-align: center; } }
+    .training_content p {
+      margin-bottom: 20px;
+      text-align: justify; }
+      .training_content p:last-child {
+        margin-bottom: 0;
+        /* ╨Э╨╡ ╤Г╨▓╨╡╤А╨╡╨╜ ╨▓ ╤Н╤В╨╛╨╝. ╨Т ╨╝╨╛╨▒╨╕╨╗╤М╨╜╨╛╨╣ ╨▓╨╡╤А╤Б╨╕╨╕ ╨╜╨╡╤В ╨┐╨╛╤Б╨╗╨╡╨┤╨╜╨╡╨│╨╛ ╨░╨▒╨╖╨░╤Ж╨░ */ }
+        @media (max-width: 767px) {
+          .training_content p:last-child {
+            display: none; } }
+  .training_form {
+    margin-top: 20px; }
+    .training_form input {
+      display: inline-block;
+      width: 49%;
+      padding: 10px;
+      border-radius: 4px;
+      background: #1f5379;
+      color: #e5e5e5;
+      font-size: 16px;
+      font-weight: 300; }
+      .training_form input::-webkit-input-placeholder {
+        color: #e5e5e5; }
+      .training_form input::-moz-placeholder {
+        color: #e5e5e5; }
+      @media (max-width: 767px) {
+        .training_form input {
+          width: 100%; } }
+    .training_form input[type="text"] {
+      margin-right: 2%; }
+      @media (max-width: 767px) {
+        .training_form input[type="text"] {
+          margin-right: 0;
+          margin-bottom: 10px; } }
+    .training_form input[type="submit"] {
+      display: block;
+      min-width: 270px;
+      margin: 20px auto;
+      padding: 15px;
+      border: 1px solid #66b284;
+      background: #3e9862;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700; }
+    .training_form .ajax-loader {
+      position: absolute; }
+    .training_form .wpcf7-form-control-wrap {
+      position: relative; }
+    .training_form span.wpcf7-not-valid-tip {
+      position: absolute;
+      left: 5px;
+      top: -30px; }
 
 .footer {
   padding-top: 35px;

@@ -1,0 +1,137 @@
+.sertificates {
+  padding: 15px 0;
+  @media(max-width:767px) {
+    padding: 10px 0;
+  }
+  h2 {
+    margin-bottom: 35px;
+  }
+  &-slider {
+    position: relative;
+    @media(max-width: 767px) {
+      max-width: 170px;
+      margin: 0 auto;
+    }
+    &_item {
+      display: flex;
+      align-items: center;
+      min-height: 240px;
+      border: 1px solid #cccccc;
+      &:hover {
+        cursor: pointer;
+      }
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      .owl-prev, .owl-next {
+        position: absolute;
+        top: 38%;
+        i {
+          font-size: 45px;
+        }
+      }
+      .owl-prev {
+        left: -75px;
+        @media(max-width:767px){
+          left: -60px;
+        }
+      }
+      .owl-next {
+        right: -75px;
+        @media(max-width:767px) {
+          right: -60px;
+        }
+      }
+    }
+  }
+  &-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0 ;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(#000, .5);
+
+    &_windows {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 500px;
+    }
+    &_outer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0 ;
+      bottom: 0;
+    }
+    &_close {
+      position: absolute;
+      right: 40px;
+      top: -20px;
+      color: #fff;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &_slider {
+      position: relative;
+      z-index: 11;
+      .owl-stage {
+        display: flex;
+        align-items: center;
+      }
+      .owl-stage-outer {
+        z-index: 11;
+      }
+      .owl-nav {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .owl-prev, .owl-next {
+          position: relative;
+          i {
+            font-size: 20px;
+            color: #fff;
+          }
+        }
+        .owl-prev {left: -30px;}
+        .owl-next {right: -30px;}
+      }
+      .owl-item img {
+        width: auto;
+      }
+    }
+    &_item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        //display: block;
+        //max-width: 100%;
+        //width: 100%;
+        //height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+.training {
+  padding-top: 25px;
+  h2 {
+    margin-bottom: 15px;
+  }
+  &_outer {
+    background: #527188;
+  }
+  &_image {
+    padding-left: 20px;
+    position: relative;
+    top: -40px;
+    text-align: center;
+    @media(max-width: 991px) {
+      top: 0;
+      padding-left: 0;
+      padding-top: 35px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  &_content {
+    color: #fff;
+    h3 {
+      margin-top: 35px;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+      @media(max-width: 767px) {text-align: center;}
+    }
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+      &:last-child {
+        margin-bottom: 0;
+        @media(max-width: 767px) {display: none;} /* Не уверен в этом. В мобильной версии нет последнего абзаца */
+      }
+    }
+  }
+  &_form {
+    margin-top: 20px;
+    input {
+      display: inline-block;
+      width: 49%;
+      padding: 10px;
+      border-radius: 4px;
+      background: #1f5379;
+      color: #e5e5e5;
+      font-size: 16px;
+      font-weight: 300;
+      &::-webkit-input-placeholder {
+        color: #e5e5e5;
+      }
+      &::-moz-placeholder {
+        color: #e5e5e5;
+      }
+      @media(max-width: 767px) {
+        width: 100%;
+      }
+    }
+    input[type="text"] {
+      margin-right: 2%;
+      @media(max-width: 767px) {
+        margin-right:0;
+        margin-bottom: 10px;
+      }
+    }
+    input[type="submit"] {
+      display: block;
+      min-width: 270px;
+      margin: 20px auto;
+      padding: 15px;
+      border: 1px solid #66b284;
+      background: #3e9862;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .ajax-loader {
+      position: absolute;
+    }
+    .wpcf7-form-control-wrap {position: relative;}
+    span.wpcf7-not-valid-tip {
+      position: absolute;
+      left: 5px;
+      top: -30px;
+    }
+  }
+}
