@@ -19,7 +19,11 @@
                 <div class="row">
                     <div class="col-md-5 col-lg-3">
                         <div class="news_image">
-                            <?php the_post_thumbnail(); ?>
+                            <?php if( has_post_thumbnail() ) : ?>
+                                <?php the_post_thumbnail(); ?>
+                            <?php else : ?>
+                                <img src="<?php echo get_template_directory_uri() ?>/no-image.png" alt="Consulting no image">
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-9">
