@@ -42,24 +42,42 @@ $(function(){
  **  PopUp Certificates Slider Init
  */
 $(function(){
-    $('#sertificatesPopupSlider').owlCarousel({
-        items: 1,
-        margin: 10,
-        loop: true,
-        nav: true,
-        dots: false,
-        navText: [
-            '<i class="fal fa-chevron-left"></i>',
-            '<i class="fal fa-chevron-right"></i>'
-        ]
-    });
+    // $('#sertificatesPopupSlider').owlCarousel({
+    //     items: 1,
+    //     margin: 10,
+    //     loop: true,
+    //     nav: true,
+    //     dots: false,
+    //     navText: [
+    //         '<i class="fal fa-chevron-left"></i>',
+    //         '<i class="fal fa-chevron-right"></i>'
+    //     ]
+    // });
 });
 
 /*
  **  PopUp Certificates Slider Open / Close
  */
+var sertifSlider;
 $(function(){
     $('.sertificates-slider_item').on('click', function(){
+        // Destroy Slider
+        if( sertifSlider )
+            sertifSlider.trigger('destroy.owl.carousel');
+        // Select Key Item For Init Slider
+        var item = $(this).attr('data-item');
+        sertifSlider = $('#sertificatesPopupSlider').owlCarousel({
+            items: 1,
+            startPosition: item,
+            margin: 10,
+            loop: true,
+            nav: true,
+            dots: false,
+            navText: [
+                '<i class="fal fa-chevron-left"></i>',
+                '<i class="fal fa-chevron-right"></i>'
+            ]
+        });
         $('.sertificates-popup').fadeIn();
     });
     $('.sertificates-popup_close, .sertificates-popup_outer').on('click', function(){

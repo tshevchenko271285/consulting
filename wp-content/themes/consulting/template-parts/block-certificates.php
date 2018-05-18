@@ -10,8 +10,8 @@
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div id="sertificatesSlider" class="sertificates-slider owl-carousel">
-                        <?php foreach ( $gallery as $item ) : ?>
-                            <div class="sertificates-slider_item">
+                        <?php foreach ( $gallery as $key => $item ) : ?>
+                            <div class="sertificates-slider_item" data-item="<?php echo $key; ?>">
                                 <img src="<?php echo $item['url']; ?>" alt="Sertificate">
                             </div>
                         <?php endforeach; ?>

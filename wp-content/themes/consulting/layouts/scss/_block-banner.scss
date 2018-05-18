@@ -100,10 +100,10 @@
       left: 60px;
       min-width: 170px;
     }
-    .wpcf7-validation-errors {
+    .wpcf7-response-output {
       position: absolute;
       left: 0;
-      bottom: 75px;
+      bottom: -75px;
     }
   }
 }

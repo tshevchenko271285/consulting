@@ -242,10 +242,10 @@ p {
       top: -55px;
       left: 60px;
       min-width: 170px; }
-    .banner_form .wpcf7-validation-errors {
+    .banner_form .wpcf7-response-output {
       position: absolute;
       left: 0;
-      bottom: 75px; }
+      bottom: -75px; }
 
 .facts {
   padding-top: 35px; }
